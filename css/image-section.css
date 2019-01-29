@@ -1,0 +1,110 @@
+.image-section {
+    flex: 1.4;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; 
+    /* border-right: groove 4px #FFC001; */
+}
+
+
+.section-img-first {
+    background-image: url(https://i.pinimg.com/736x/d2/73/d6/d273d690319ae2ed4b60305b7b3e743d.jpg);
+    background-size: 55vh;
+}
+
+.section-img-second {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/e/e5/Confessionscrowley.jpg);
+    background-size: 45vh;
+}
+
+.section-img-third {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Liber_AL_Vel_Legis.png/238px-Liber_AL_Vel_Legis.png);
+    background-size: 45vh;
+}
+
+.section-img-fourth {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/8/80/Moonchild.gif);
+    background-size: 48vh;
+}
+
+.section-img-fifth {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/41plv19RyBL._SX384_BO1,204,203,200_.jpg);
+    background-size: 57vh;
+}
+@media screen and (max-width:760px) {
+    .image-section {
+        background-size: 43vh;
+    }
+  }
+
+
+.gallery-counter {
+    width: 55%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+   
+}
+
+
+.gallery-counter div {
+    height: 100px;
+    width: 85%;
+    background-color: #1D1D1D;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* margin-left: 100px; */
+}
+
+.gallery-counter div h2 {
+    letter-spacing: 1px;
+    font-size: 70px;
+    margin: 0 50px 0 40px;
+}
+
+.gallery-counter div div {
+    height: 4%;
+    width: 35%;
+    align-items: center;
+    background-color: #B1B1B1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.gallery-counter div div .loader-line {
+    height: 75%;
+    background-color: #FFC001;
+}
+
+#line-first-img {
+    width: 20%;
+}
+
+#line-second-img {
+    width: 40%;
+}
+
+#line-third-img {
+    width: 60%;
+}
+
+#line-fourth-img {
+    width: 80%;
+}
+
+#line-fifth-img {
+    width: 100%;
+}
+
+@media screen and (max-width:760px){
+    .gallery-counter {
+display: none;
+    }
+}
+
