@@ -53,7 +53,7 @@ function fetchPage(link, page) {
                 easing: 'easeInExpo',
                 duration: 700,
                 complete: (anim) => {
-                    document.querySelector('.column-wrappers').remove();
+                    document.querySelector('.column-wrapper').remove();
                 }
             })
 
@@ -74,10 +74,10 @@ function fetchPage(link, page) {
            
 
             setTimeout(function () {
-                document.querySelector('body').insertBefore(doc.querySelector('.new-contents'), document.querySelector('.gallery-nav'));
+                document.querySelector('body').insertBefore(doc.querySelector('.new-content'), document.querySelector('.gallery-nav'));
 
                 anime({
-                    targets: '.new-contents .text-section h1, .new-contents .text-section p, .new-contents .text-section div',
+                    targets: '.new-content .text-section h1, .new-content .text-section p, .new-content .text-section div',
                     translateX: [-600, 0],
                     delay: (el, i) => 100 * i,
                     opacity: [0, 1],
