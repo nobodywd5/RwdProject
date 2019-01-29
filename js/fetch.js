@@ -10,23 +10,23 @@ linkArray.forEach((eachLink) => {
     eachLink.addEventListener('click', (e) => {
         switch (eachLink) {
             case biographyLink:
-                fetchPage(eachLink, 'html/biography.html');
+                fetchPage(eachLink, 'biography.html');
                 break;
 
             case anAutohagiographyLink:
-                fetchPage(eachLink, 'html/anAutohagiography.html');
+                fetchPage(eachLink, 'anAutohagiography.html');
                 break;
 
             case theBookOfTheLawLink:
-                fetchPage(eachLink, 'html/theBookOfTheLaw.html');
+                fetchPage(eachLink, 'theBookOfTheLaw.html');
                 break;
 
             case moonchildLink:
-                fetchPage(eachLink, 'html/moonchild.html');
+                fetchPage(eachLink, 'moonchild.html');
                 break;
 
             case theBookOfTheLiesLink:
-                fetchPage(eachLink, 'html/theBookOfTheLies.html');
+                fetchPage(eachLink, 'theBookOfTheLies.html');
                 break;
         }
     })
@@ -71,13 +71,6 @@ function fetchPage(link, page) {
                 easing: 'easeInExpo',
                 duration: 700,
             })
-            anime({
-                targets: '.hamburger',
-                translateX: 1000,
-                opacity: 0,
-                easing: 'easeInExpo',
-                duration: 700,
-            })
            
 
             setTimeout(function () {
@@ -100,13 +93,6 @@ function fetchPage(link, page) {
                 anime({
                     targets: '.gallery-counter',
                     translateX: [0, 350],
-                    delay: (el, i) => 100 * i,
-                    opacity: [0, 1],
-                    easing: 'easeOutExpo',
-                })
-                anime({
-                    targets: '.hamburger',
-                    translateX: [100, 0],
                     delay: (el, i) => 100 * i,
                     opacity: [0, 1],
                     easing: 'easeOutExpo',

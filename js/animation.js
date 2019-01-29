@@ -37,21 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			offset: '-=700',
 		})
 		.add({
-			targets: '.ham-line',
-			translateX: [500, 0],
-			opacity: [0, 1],
-			duration: 800,
-			delay: (el, i) => 100 * i,
-			offset: '-=700',
-		})
-		.add({
-			targets: '.social-links a',
-			translateX: [500, 0],
-			opacity: [0, 1],
-			delay: (el, i) => 200 * i,
-			offset: '-=1000',
-		})
-		.add({
 			targets: '.gallery-counter',
 			translateX: [0, 350],
 			delay: (el, i) => 100 * i,
