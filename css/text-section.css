@@ -1,0 +1,92 @@
+.column-wrapper {
+    display: flex;
+    /* text-align: center; */
+    height: 100vh;
+}
+
+
+.text-section {
+    margin-top: 100px;
+
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.text-section h1 {
+    text-align: center;
+    font-size: 50px;
+    width: 100%;
+    
+}
+
+
+
+
+.text-section p {
+    max-width: 500px;
+    line-height: 25px;
+    color: #B1B1B1;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+@media screen and (max-width:760px) {
+    .text-section p {
+        width: 230%;
+        margin-top: 50%;
+    }
+    .text-section h1 {
+        font-size: 40px;
+        
+    }
+  }
+
+
+
+
+.details-btn {
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.details-btn:hover img {
+    transform: rotate(405deg);
+}
+
+.details-btn img {
+    transition: all .6s ease;
+    height: 15px;
+    margin-left: 10px;
+}
+
+.year-aleister {
+    font-size: 25px;
+    margin-left: 1.6em;
+}
+
+.pdf-link-logo {
+    text-decoration: none;
+    font-size: 30px;
+    color: #000;
+}
+.pdf-link {
+    text-decoration: none;
+    font-size: 32px;
+    color: #FFC001;
+}
+
+@media screen and (max-width:760px) {
+    .year-aleister {
+        font-size: 20px;
+        margin-left: -6.5em;
+    }
+    .marginB {
+        margin-bottom: 10em;
+    }
+  }
