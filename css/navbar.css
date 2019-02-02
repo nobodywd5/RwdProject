@@ -22,11 +22,34 @@
 
 /*-----------*/
 .img-logo {
-    background: url(https://lh5.googleusercontent.com/proxy/qFaShMu9mi3JMm849Kox9lHGugjTBzKJN0mWam89d118ga0IQloa7T6bwoWcJHfLhgaC0wEWqlHyfMt41hYlvQ=w1200-h630-p-k-no-nu);
-    height: 6em;
+    background: url(http://ok-t.ru/studopediasu/baza3/848330857894.files/image096.png);
+    height: 5em;
     width: 6em;
-    background-size: 6em;
+    background-size: 5em;
     background-repeat: no-repeat;
+    margin-left: 1.4em;
+    margin-bottom: .2em;
+}
+.img-logo-main{
+    background: url(https://cdn1.iconfinder.com/data/icons/satanic-occult/48/jee-18-512.png);
+    background-size: 2em;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 43px;
+}
+.logo-text{
+    font-size: 2em;
+    max-width: 100%;
+    color: #B1B1B1;
+}
+.hover-blue-text:hover{
+    color:#ffe400;;
+}
+.container-logo{
+    background-color: #ffe400;
+}
+.social li a i:hover {
+    background-color: #ffe400;
 }
 
 nav {
@@ -49,3 +72,11 @@ nav {
     color: #ffe400;
 }
 
+@media (max-height: 992px) {
+    .side-nav .logo-wrapper {
+        height: 50px;
+    }
+}
+.navbar.navbar-3 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger1.svg?color=6a1b9a');
+    }
