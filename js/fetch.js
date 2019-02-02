@@ -32,6 +32,35 @@ linkArray.forEach((eachLink) => {
     })
 })
 
+                        //------------//
+let biographyLinkFn = document.querySelector('#biography-link-fn');
+let thusSpokeZarathustraLinkFn = document.querySelector('#thus-spoke-zarathustra-link-fn');
+let BeyondGoodAndEvilFn = document.querySelector('#beyond-good-and-evil-link-fn');
+// let moonchildLink = document.querySelector('#moonchild-link');
+// let theBookOfTheLiesLink = document.querySelector('#theBookOfTheLies-link');
+
+let linkArrayFn = [biographyLinkFn, thusSpokeZarathustraLinkFn, BeyondGoodAndEvilFn];
+
+linkArrayFn.forEach((eachLink) => {
+    eachLink.addEventListener('click', (e) => {
+        switch (eachLink) {
+            case biographyLinkFn:
+                fetchPage(eachLink, 'RwdProject/htmlFN/biographyFn.html');
+                break;
+
+            case thusSpokeZarathustraLinkFn:
+                fetchPage(eachLink, 'RwdProject/htmlFN/thusSpokeZarathustraFn.html');
+                break;
+
+            case BeyondGoodAndEvilFn:
+                fetchPage(eachLink, 'RwdProject/htmlFN/BeyondGoodAndEvilFn.html');
+                break;
+
+        }
+    })
+})
+
+
 function fetchPage(link, page) {
     let baseURL = `${window.location.protocol}//${window.location.hostname}`;
 

@@ -38,6 +38,31 @@
     }
   }
 
+  .section-img-first-fn {
+    background-image: url(https://sites.google.com/site/periphilosophiaslogos/_/rsrc/1428589061399/philosophoi/philosophoi-tou-19ou-aiona/phreiderikos-nitse/nietzsche.jpg?height=320&width=256);
+    background-size: 55vh;
+}
+
+.section-img-second {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/90/Also_sprach_Zarathustra.GIF);
+    background-size: 45vh;
+}
+
+.section-img-third {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Liber_AL_Vel_Legis.png/238px-Liber_AL_Vel_Legis.png);
+    background-size: 45vh;
+}
+
+.section-img-fourth {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/8/80/Moonchild.gif);
+    background-size: 48vh;
+}
+
+.section-img-fifth {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/41plv19RyBL._SX384_BO1,204,203,200_.jpg);
+    background-size: 57vh;
+}
+
 
 .gallery-counter {
     width: 55%;

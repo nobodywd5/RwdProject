@@ -30,6 +30,7 @@
     margin-bottom: 50px;
     letter-spacing: 1px;
     text-align: center;
+    /* margin-left: 2em; */
 }
 
 
@@ -55,7 +56,7 @@
     margin-left: 10px;
 }
 
-.year-aleister {
+.year-all {
     font-size: 25px;
     margin-left: 1.6em;
     text-align: center;
@@ -70,10 +71,11 @@
     text-decoration: none;
     font-size: 32px;
     color: #FFC001;
+    text-align: center;
 }
 
 @media screen and (max-width:760px) {
-    .year-aleister {
+    .year-all {
         font-size: 20px;
         margin-left: -6.5em;
     }
