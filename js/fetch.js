@@ -1,61 +1,63 @@
-let biographyLink = document.querySelector('#biography-link');
-let anAutohagiographyLink = document.querySelector('#anAutohagiography-link');
-let theBookOfTheLawLink = document.querySelector('#theBookOfTheLaw-link');
-let moonchildLink = document.querySelector('#moonchild-link');
-let theBookOfTheLiesLink = document.querySelector('#theBookOfTheLies-link');
+let BiographyLink = document.querySelector('#biography-link');
+let AnAutohagiographyLink = document.querySelector('#anAutohagiography-link');
+let TheBookOfTheLawLink = document.querySelector('#theBookOfTheLaw-link');
+let MoonchildLink = document.querySelector('#moonchild-link');
+let TheBookOfTheLiesLink = document.querySelector('#theBookOfTheLies-link');
 
-let linkArray = [biographyLink, anAutohagiographyLink, theBookOfTheLawLink, moonchildLink, theBookOfTheLiesLink];
+let linkArray = [BiographyLink, AnAutohagiographyLink, TheBookOfTheLawLink, MoonchildLink, TheBookOfTheLiesLink];
 
 linkArray.forEach((eachLink) => {
     eachLink.addEventListener('click', (e) => {
         switch (eachLink) {
-            case biographyLink:
-                fetchPage(eachLink, 'RwdProject/biography.html');
+            case BiographyLink:
+                fetchPage(eachLink, 'labirynth.book/htmlAC/biography.html');
                 break;
 
-            case anAutohagiographyLink:
-                fetchPage(eachLink, 'RwdProject/anAutohagiography.html');
+            case AnAutohagiographyLink:
+                fetchPage(eachLink, 'labirynth.book/htmlAC/anAutohagiography.html');
                 break;
 
-            case theBookOfTheLawLink:
-                fetchPage(eachLink, 'RwdProject/theBookOfTheLaw.html');
+            case TheBookOfTheLawLink:
+                fetchPage(eachLink, 'labirynth.book/htmlAC/theBookOfTheLaw.html');
                 break;
 
-            case moonchildLink:
-                fetchPage(eachLink, 'RwdProject/moonchild.html');
+            case MoonchildLink:
+                fetchPage(eachLink, 'labirynth.book/htmlAC/moonchild.html');
                 break;
 
-            case theBookOfTheLiesLink:
-                fetchPage(eachLink, 'RwdProject/theBookOfTheLies.html');
+            case TheBookOfTheLiesLink:
+                fetchPage(eachLink, 'labirynth.book/htmlAC/theBookOfTheLies.html');
                 break;
         }
     })
 })
 
-                        //------------//
-let biographyLinkFn = document.querySelector('#biography-link-fn');
-let thusSpokeZarathustraLinkFn = document.querySelector('#thus-spoke-zarathustra-link-fn');
+                                    //------------//
+let BiographyLinkFn = document.querySelector('#biography-link-fn');
+let ThusSpokeZarathustraLinkFn = document.querySelector('#thus-spoke-zarathustra-link-fn');
 let BeyondGoodAndEvilFn = document.querySelector('#beyond-good-and-evil-link-fn');
-// let moonchildLink = document.querySelector('#moonchild-link');
-// let theBookOfTheLiesLink = document.querySelector('#theBookOfTheLies-link');
+let TheAntichristFn = document.querySelector('#the-antichrist-fn');
 
-let linkArrayFn = [biographyLinkFn, thusSpokeZarathustraLinkFn, BeyondGoodAndEvilFn];
+let linkArrayFn = [BiographyLinkFn, ThusSpokeZarathustraLinkFn, BeyondGoodAndEvilFn, TheAntichristFn];
 
 linkArrayFn.forEach((eachLink) => {
     eachLink.addEventListener('click', (e) => {
         switch (eachLink) {
-            case biographyLinkFn:
-                fetchPage(eachLink, 'RwdProject/htmlFN/biographyFn.html');
+            case BiographyLinkFn:
+                fetchPage(eachLink, 'labirynth.book/htmlFN/biographyFn.html');
                 break;
 
-            case thusSpokeZarathustraLinkFn:
-                fetchPage(eachLink, 'RwdProject/htmlFN/thusSpokeZarathustraFn.html');
+            case ThusSpokeZarathustraLinkFn:
+                fetchPage(eachLink, 'labirynth.book/htmlFN/thusSpokeZarathustraFn.html');
                 break;
 
             case BeyondGoodAndEvilFn:
-                fetchPage(eachLink, 'RwdProject/htmlFN/BeyondGoodAndEvilFn.html');
+                fetchPage(eachLink, 'labirynth.book/htmlFN/beyondGoodAndEvilFn.html');
                 break;
 
+            case TheAntichristFn:
+                fetchPage(eachLink, 'labirynth.book/htmlFN/theAntichristFn.html');
+                break;
         }
     })
 })
@@ -100,7 +102,7 @@ function fetchPage(link, page) {
                 easing: 'easeInExpo',
                 duration: 700,
             })
-           
+
 
             setTimeout(function () {
                 document.querySelector('body').insertBefore(doc.querySelector('.new-content'), document.querySelector('.gallery-nav'));
@@ -117,13 +119,15 @@ function fetchPage(link, page) {
                     translateY: [-600, 0],
                     delay: (el, i) => 100 * i,
                     opacity: [0, 1],
+                    borderRadius: ['0%', '20%'],
                     easing: 'easeOutExpo',
                 })
                 anime({
                     targets: '.gallery-counter',
-                    translateX: [0, 350],
+                    translateY: [0, 0],
                     delay: (el, i) => 100 * i,
                     opacity: [0, 1],
+                    borderRadius: ['0%', '20%'],
                     easing: 'easeOutExpo',
                 })
             }, 800);
