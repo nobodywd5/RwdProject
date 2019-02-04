@@ -1,5 +1,5 @@
 .image-section {
-    flex: 1.4;
+    flex: 1;
     background-position: center;
     background-repeat: no-repeat;
     position: relative; 
@@ -31,41 +31,32 @@
     background-image: url(https://images-na.ssl-images-amazon.com/images/I/41plv19RyBL._SX384_BO1,204,203,200_.jpg);
     background-size: 57vh;
 }
-@media screen and (max-width:600px) {
-    .image-section {
-        background-size: 30vh;
-        margin-bottom: 10em;
-    }
-  }
+
 
   .section-img-first-fn {
     background-image: url(https://sites.google.com/site/periphilosophiaslogos/_/rsrc/1428589061399/philosophoi/philosophoi-tou-19ou-aiona/phreiderikos-nitse/nietzsche.jpg?height=320&width=256);
     background-size: 55vh;
 }
 
-.section-img-second {
+.section-img-second-fn {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/90/Also_sprach_Zarathustra.GIF);
     background-size: 45vh;
 }
 
-.section-img-third {
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Liber_AL_Vel_Legis.png/238px-Liber_AL_Vel_Legis.png);
+.section-img-third-fn {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/e/e4/The_Antichrist_%28book%29.jpg);
     background-size: 45vh;
 }
 
-.section-img-fourth {
-    background-image: url(https://upload.wikimedia.org/wikipedia/en/8/80/Moonchild.gif);
+.section-img-fourth-fn {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Jenseits_von_Gut_und_B%C3%B6se_-_1886.jpg/220px-Jenseits_von_Gut_und_B%C3%B6se_-_1886.jpg);
     background-size: 48vh;
 }
 
-.section-img-fifth {
-    background-image: url(https://images-na.ssl-images-amazon.com/images/I/41plv19RyBL._SX384_BO1,204,203,200_.jpg);
-    background-size: 57vh;
-}
 
 
 .gallery-counter {
-    width: 55%;
+    width: 29em;
     height: 20%;
     position: absolute;
     bottom: 0;
@@ -134,3 +125,9 @@ display: none;
     }
 }
 
+@media screen and (max-width:600px) {
+    .image-section {
+        background-size: 30vh;
+        margin-bottom: 10em;
+    }
+  }

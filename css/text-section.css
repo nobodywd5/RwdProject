@@ -73,8 +73,8 @@
     color: #FFC001;
     text-align: center;
 }
-
-@media screen and (max-width:760px) {
+/* 
+@media screen  and (min-width:500px) and (max-width:760px) {
     .year-all {
         font-size: 20px;
         margin-left: -6.5em;
@@ -83,16 +83,21 @@
         margin-bottom: 10em;
     }
   }
-  @media screen and (max-width:760px) {
+  @media screen and (min-width:500px) and (max-width:760px) {
     .text-section p {
         font-size: 20px;
         margin-top: 70px;
     }
     .text-section h1 {
-        font-size: 23px;
+         font-size: 23px; 
         
     }
     .text-section h1 p {
         font-size: 15px;
     }
+  } */
+
+  .letter{
+      display: inline-block;
+      letter-spacing: -0.1em;
   }
