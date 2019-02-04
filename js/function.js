@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-	let navLinks = document.querySelectorAll('.side-navigation-links a');
+	let navLinks = document.querySelectorAll('.side-navigation-links a, .social-links a');
 
 	navLinks.forEach((navLink) => {
 		navLink.addEventListener('mouseenter', () => {
