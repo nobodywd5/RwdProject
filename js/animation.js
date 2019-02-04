@@ -15,8 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
 			targets: '.logo h1, nav a',
 			opacity: [0, 1],
 			translateY: [20, 0],
-			delay: (el, i) => 100 * i,
-			offset: '-=700',
+			// delay: (el, i) => 700 * i,
+			offset: '-=0',
+			delay: 1500,
 		})
 		.add({
 			targets: '.text-section',
@@ -27,8 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
 		.add({
 			targets: '.image-section',
 			translateY: [-300, 0],
+			borderRadius: ['0%', '50%'],
 			opacity: [0, 1],
 			offset: '-=2000',
+			easing: 'easeInOutQuad'
 		})
 		.add({
 			targets: '#gallery-loader',
