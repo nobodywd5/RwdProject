@@ -31,11 +31,11 @@
     margin-bottom: .2em;
 }
 .img-logo-main{
-    background: url(https://cdn1.iconfinder.com/data/icons/satanic-occult/48/jee-18-512.png);
+    background: url(https://cdn.pixabay.com/photo/2014/02/12/07/33/maze-264519_960_720.png);
     background-size: 2em;
     background-repeat: no-repeat;
-    height: 40px;
-    width: 43px;
+    height: 33px;
+    width: 44px;
 }
 .logo-text{
     font-size: 2em;
@@ -78,5 +78,9 @@ nav {
     }
 }
 .navbar.navbar-3 .navbar-toggler-icon {
-    background-image: url('https://mdbootstrap.com/img/svg/hamburger1.svg?color=6a1b9a');
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger1.svg?color=ffe400');
+    }
+
+    .white-skin .side-nav {
+       background: url(http://blogs.iac.gatech.edu/msternberg/files/2016/02/labyrinth2.jpg);
     }
