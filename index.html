@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <title>Labyrinth</title>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -13,6 +13,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/mdb.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/preloader.css">
+  <link rel="stylesheet" href="css/startPage.css">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/text-section.css">
   <link rel="stylesheet" href="css/sidebar-section.css">
@@ -35,7 +36,7 @@
                 <stop stop-color="rgb(0,0,0)" offset="100%" />
             </linearGradient>
 
-            <mask id="mask-text-appear" maskunits="userSpacOnUse" maskcontentunits="userSpaceOnUse">
+            <mask id="mask-text-appear" maskcontentunits="userSpaceOnUse">
                 <rect width="150%" height="100%" fill="url(#gr-mask-opacity)" />
             </mask>
 
@@ -306,41 +307,6 @@
           </li>
 
           <li>
-            <a class="collapsible-header waves-effect arrow-r">
-              <i class="fa fa-bookmark-o"></i> none
-              <i class="fa fa-angle-down rotate-icon"></i>
-            </a>
-            <div class="collapsible-body">
-              <ul>
-                <li>
-                  <a href="#" class="waves-effect" id="battleOfAzeroth-link">none</a>
-                </li>
-                <li>
-                  <a href="#" class="waves-effect">none</a>
-                </li>
-                <li>
-                  <a href="#" class="waves-effect">none</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a class="collapsible-header waves-effect arrow-r">
-              <i class="fa fa-camera-retro"></i> none
-              <i class="fa fa-angle-down rotate-icon"></i>
-            </a>
-            <div class="collapsible-body">
-              <ul>
-                <li>
-                  <a href="#" class="waves-effect">none</a>
-                </li>
-                <li>
-                  <a href="#" class="waves-effect">none</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li>
             <a href="#" class="collapsible-header waves-effect">
               <i class="fa fa-envelope"></i> Contact</a>
           </li>
@@ -390,7 +356,13 @@
     </nav>
   </header>
 
-  <div class="column-wrapper">
+  <div class="column-wrapper" id='mainPage'>
+      <a class="btnInSlider-link" href="#">
+          <span class="btnInSlider">Button</span>
+          <span class="btnInSlider">Button</span>
+          <span class="btnInSlider">Button</span>
+          <span class="btnInSlider">Button</span>
+      </a>
     <!-- <section class="text-section new-content container" id="index-link">
       <div class="row">
         <h1 class="col-12">Edward<br> Alexander Crowley<br>
@@ -423,6 +395,7 @@
 
   <!-- SCRIPTS -->
   <script src="js/preloader.js"></script>
+  <script src="js/startPage.js"></script>
   <script src="js/fetch.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.min.js"></script>

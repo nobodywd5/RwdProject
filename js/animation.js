@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 		.add({
 			targets: '.image-section',
-			translateY: [-300, 0],
+			translateX: [-300, 0],
 			borderRadius: ['0%', '50%'],
 			opacity: [0, 1],
 			offset: '-=2000',

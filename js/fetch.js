@@ -76,7 +76,7 @@ function fetchPage(link, page) {
         })
         .then(function (html) {
             let doc = new DOMParser().parseFromString(html, "text/html");
-
+           let columnWraperRemove = document.querySelector('.column-wrapper');
             anime({
                 targets: '.text-section h1, .text-section p, .text-section div',
                 translateX: 700,
@@ -84,7 +84,7 @@ function fetchPage(link, page) {
                 easing: 'easeInExpo',
                 duration: 700,
                 complete: (anim) => {
-                    document.querySelector('.column-wrapper').remove();
+                    columnWraperRemove.remove();
                 }
             })
 
@@ -104,9 +104,12 @@ function fetchPage(link, page) {
             })
 
 
-            setTimeout(function () {
-                document.querySelector('body').insertBefore(doc.querySelector('.new-content'), document.querySelector('.gallery-nav'));
-
+            let selectorBody = document.querySelector('body');
+            let newContent = doc.querySelector('.new-content');
+            let galeryNav = document.querySelector('.gallery-nav');
+             setTimeout(function () {
+                 selectorBody.insertBefore(newContent, galeryNav);
+ 
                 anime({
                     targets: '.new-content .text-section h1, .new-content .text-section p, .new-content .text-section div',
                     translateX: [-600, 0],
@@ -124,8 +127,8 @@ function fetchPage(link, page) {
                 })
                 anime({
                     targets: '.gallery-counter',
-                    translateY: [0, 0],
-                    delay: (el, i) => 100 * i,
+                    translateY: [300, 0],
+                    delay: 1000,
                     opacity: [0, 1],
                     borderRadius: ['0%', '20%'],
                     easing: 'easeOutExpo',
