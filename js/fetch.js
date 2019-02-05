@@ -108,7 +108,7 @@ function fetchPage(link, page) {
             let newContent = doc.querySelector('.new-content');
             let galeryNav = document.querySelector('.gallery-nav');
              setTimeout(function () {
-                 selectorBody.insertBefore(newContent, galeryNav);
+                 selectorBody.insertBefore(newContent, galeryNav, null);
  
                 anime({
                     targets: '.new-content .text-section h1, .new-content .text-section p, .new-content .text-section div',
