@@ -104,11 +104,13 @@ function fetchPage(link, page) {
             })
 
 
-            let selectorBody = document.querySelector('body');
-            let newContent = doc.querySelector('.new-content');
-            let galeryNav = document.querySelector('.gallery-nav');
+            
              setTimeout(function () {
-                 selectorBody.insertBefore(newContent, galeryNav, null);
+                let selectorBody = document.querySelector('body');
+                let newContent = doc.querySelector('.new-content');
+                let galeryNav = document.querySelector('.gallery-nav');
+                 
+                selectorBody.insertBefore(newContent, galeryNav);
  
                 anime({
                     targets: '.new-content .text-section h1, .new-content .text-section p, .new-content .text-section div',
