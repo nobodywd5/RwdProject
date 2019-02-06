@@ -39,7 +39,7 @@ let BeyondGoodAndEvilLinkFn = document.querySelector('#beyond-good-and-evil-link
 let TheAntichristLinkFn = document.querySelector('#the-antichrist-link-fn');
 
 let linkArrayFn = [BiographyLinkFn, ThusSpokeZarathustraLinkFn, BeyondGoodAndEvilLinkFn, TheAntichristLinkFn];
-console.log(BeyondGoodAndEvilLinkFn);
+
 linkArrayFn.forEach((eLink) => {
     eLink.addEventListener('click', (e) => {
         switch (eLink) {
@@ -52,7 +52,7 @@ linkArrayFn.forEach((eLink) => {
                 break;
 
             case BeyondGoodAndEvilLinkFn:
-                fetchPage(eLink, '/labyrinth.book/htmlFN/beyondGoodAndEvilFn.html');
+                fetchPage(eLink, '//labyrinth.book/htmlFN/beyondGoodAndEvilFn.html');
                 break;
 
             case TheAntichristLinkFn:
