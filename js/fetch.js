@@ -52,11 +52,11 @@ linkArrayFn.forEach((eachLink) => {
                 break;
 
             case BeyondGoodAndEvilFn:
-                fetchPage(eachLink, 'labirynth.book/htmlFN/beyondGoodAndEvilFn.html');
+                fetchPage(eachLink, 'htmlFN/beyondGoodAndEvilFn.html');
                 break;
 
             case TheAntichristFn:
-                fetchPage(eachLink, 'labirynth.book/htmlFN/theAntichristFn.html');
+                fetchPage(eachLink, '../../htmlFN/theAntichristFn.html');
                 break;
         }
     })
@@ -71,22 +71,22 @@ function fetchPage(link, page) {
     }
 
     fetch(`${baseURL}/${page}`)
-        .then(function (response) {
-            return response.text()
+    .then(function (response) {
+        return response.text()
+    })
+    .then(function (html) {
+        let doc = new DOMParser().parseFromString(html, "text/html");
+
+        anime({
+            targets: '.text-section h1, .text-section p, .text-section div',
+            translateX: 700,
+            opacity: 0,
+            easing: 'easeInExpo',
+            duration: 700,
+            complete: (anim) => {
+                document.querySelector('.column-wrapper').remove();
+            }
         })
-        .then(function (html) {
-            let doc = new DOMParser().parseFromString(html, "text/html");
-           let columnWraperRemove = document.querySelector('.column-wrapper');
-            anime({
-                targets: '.text-section h1, .text-section p, .text-section div',
-                translateX: 700,
-                opacity: 0,
-                easing: 'easeInExpo',
-                duration: 700,
-                complete: (anim) => {
-                    columnWraperRemove.remove();
-                }
-            })
 
             anime({
                 targets: '.image-section',
@@ -104,14 +104,9 @@ function fetchPage(link, page) {
             })
 
 
-            
-             setTimeout(function () {
-                let selectorBody = document.querySelector('body');
-                let newContent = doc.querySelector('.new-content');
-                let galeryNav = document.querySelector('.gallery-nav');
-                 
-                selectorBody.insertBefore(newContent, galeryNav);
- 
+            setTimeout(function () {
+                document.querySelector('body').insertBefore(doc.querySelector('.new-content'), document.querySelector('.gallery-nav'));
+
                 anime({
                     targets: '.new-content .text-section h1, .new-content .text-section p, .new-content .text-section div',
                     translateX: [-600, 0],
