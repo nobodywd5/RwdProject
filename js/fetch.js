@@ -48,11 +48,11 @@ linkArrayFn.forEach((eachLink) => {
                 break;
 
             case ThusSpokeZarathustraLinkFn:
-                fetchPage(eachLink, 'labirynth.book/htmlFN/thusSpokeZarathustraFn.html');
+                fetchPage(eachLink, 'labirynth.book/thusSpokeZarathustraFn.html');
                 break;
 
             case BeyondGoodAndEvilFn:
-                fetchPage(eachLink, 'htmlFN/beyondGoodAndEvilFn.html');
+                fetchPage(eachLink, 'labirynth.book/htmlFN/beyondGoodAndEvilFn.html');
                 break;
 
             case TheAntichristFn:
