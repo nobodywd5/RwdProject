@@ -44,7 +44,7 @@ linkArrayFn.forEach((eachLink) => {
     eachLink.addEventListener('click', (e) => {
         switch (eachLink) {
             case BiographyLinkFn:
-                fetchPage(eachLink, '/laburinth.book/htmlFN/biographyFn.html');
+                fetchPage(eachLink, '/labyrinth.book/htmlFN/biographyFn.html');
                 break;
 
             case ThusSpokeZarathustraLinkFn:
