@@ -52,7 +52,7 @@ linkArrayFn.forEach((eLink) => {
                 break;
 
             case BeyondGoodAndEvilLinkFn:
-                fetchPage(eLink, '//labyrinth.book/htmlFN/beyondGoodAndEvilFn.html');
+                fetchPage(eLink, '/labyrinth.book/htmlFN/BeyondGoodAndEvilFn.html');
                 break;
 
             case TheAntichristLinkFn:
