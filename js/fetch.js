@@ -35,11 +35,11 @@ linkArray.forEach((eachLink) => {
                                     //------------//
 let BiographyLinkFn = document.querySelector('#biography-link-fn');
 let ThusSpokeZarathustraLinkFn = document.querySelector('#thus-spoke-zarathustra-link-fn');
-let BeyondGoodAndEvilFn = document.querySelector('#beyond-good-and-evil-link-fn');
-let TheAntichristFn = document.querySelector('#the-antichrist-fn');
+let BeyondGoodAndEvilLinkFn = document.querySelector('#beyond-good-and-evil-link-fn');
+let TheAntichristLinkFn = document.querySelector('#the-antichrist-link-fn');
 
-let linkArrayFn = [BiographyLinkFn, ThusSpokeZarathustraLinkFn, BeyondGoodAndEvilFn, TheAntichristFn];
-console.log(linkArrayFn);
+let linkArrayFn = [BiographyLinkFn, ThusSpokeZarathustraLinkFn, BeyondGoodAndEvilLinkFn, TheAntichristLinkFn];
+console.log(BeyondGoodAndEvilLinkFn);
 linkArrayFn.forEach((eLink) => {
     eLink.addEventListener('click', (e) => {
         switch (eLink) {
@@ -51,11 +51,11 @@ linkArrayFn.forEach((eLink) => {
                 fetchPage(eLink, '/labyrinth.book/htmlFN/thusSpokeZarathustraFn.html');
                 break;
 
-            case BeyondGoodAndEvilFn:
+            case BeyondGoodAndEvilLinkFn:
                 fetchPage(eLink, '/labyrinth.book/htmlFN/beyondGoodAndEvilFn.html');
                 break;
 
-            case TheAntichristFn:
+            case TheAntichristLinkFn:
                 fetchPage(eLink, '/labyrinth.book/htmlFN/theAntichristFn.html');
                 break;
         }
