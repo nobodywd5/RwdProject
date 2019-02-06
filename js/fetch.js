@@ -10,23 +10,23 @@ linkArray.forEach((eachLink) => {
     eachLink.addEventListener('click', (e) => {
         switch (eachLink) {
             case BiographyLink:
-                fetchPage(eachLink, 'labirynth.book/htmlAC/biography.html');
+                fetchPage(eachLink, '/labirynth.book/htmlAC/biography.html');
                 break;
 
             case AnAutohagiographyLink:
-                fetchPage(eachLink, 'labirynth.book/htmlAC/anAutohagiography.html');
+                fetchPage(eachLink, '/labirynth.book/htmlAC/anAutohagiography.html');
                 break;
 
             case TheBookOfTheLawLink:
-                fetchPage(eachLink, 'labirynth.book/htmlAC/theBookOfTheLaw.html');
+                fetchPage(eachLink, '/labirynth.book/htmlAC/theBookOfTheLaw.html');
                 break;
 
             case MoonchildLink:
-                fetchPage(eachLink, 'labirynth.book/htmlAC/moonchild.html');
+                fetchPage(eachLink, '/labirynth.book/htmlAC/moonchild.html');
                 break;
 
             case TheBookOfTheLiesLink:
-                fetchPage(eachLink, 'labirynth.book/htmlAC/theBookOfTheLies.html');
+                fetchPage(eachLink, '/labirynth.book/htmlAC/theBookOfTheLies.html');
                 break;
         }
     })
@@ -44,19 +44,19 @@ linkArrayFn.forEach((eachLink) => {
     eachLink.addEventListener('click', (e) => {
         switch (eachLink) {
             case BiographyLinkFn:
-                fetchPage(eachLink, 'labirynth.book/htmlFN/biographyFn.html');
+                fetchPage(eachLink, '/labirynth.book/htmlFN/biographyFn.html');
                 break;
 
             case ThusSpokeZarathustraLinkFn:
-                fetchPage(eachLink, 'labirynth.book/thusSpokeZarathustraFn.html');
+                fetchPage(eachLink, '/labirynth.book/htmlFN/thusSpokeZarathustraFn.html');
                 break;
 
             case BeyondGoodAndEvilFn:
-                fetchPage(eachLink, 'labirynth.book/htmlFN/beyondGoodAndEvilFn.html');
+                fetchPage(eachLink, '/labirynth.book/htmlFN/beyondGoodAndEvilFn.html');
                 break;
 
             case TheAntichristFn:
-                fetchPage(eachLink, '../../htmlFN/theAntichristFn.html');
+                fetchPage(eachLink, '/labirynth.book/htmlFN/theAntichristFn.html');
                 break;
         }
     })
