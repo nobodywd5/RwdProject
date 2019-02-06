@@ -39,7 +39,7 @@ let BeyondGoodAndEvilFn = document.querySelector('#beyond-good-and-evil-link-fn'
 let TheAntichristFn = document.querySelector('#the-antichrist-fn');
 
 let linkArrayFn = [BiographyLinkFn, ThusSpokeZarathustraLinkFn, BeyondGoodAndEvilFn, TheAntichristFn];
-
+console.log(linkArrayFn);
 linkArrayFn.forEach((eLink) => {
     eLink.addEventListener('click', (e) => {
         switch (eLink) {
