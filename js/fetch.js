@@ -40,23 +40,23 @@ let TheAntichristFn = document.querySelector('#the-antichrist-fn');
 
 let linkArrayFn = [BiographyLinkFn, ThusSpokeZarathustraLinkFn, BeyondGoodAndEvilFn, TheAntichristFn];
 
-linkArrayFn.forEach((eachLink) => {
+linkArrayFn.forEach((eLink) => {
     eachLink.addEventListener('click', (e) => {
-        switch (eachLink) {
+        switch (eLink) {
             case BiographyLinkFn:
-                fetchPage(eachLink, '/labyrinth.book/htmlFN/biographyFn.html');
+                fetchPage(eLink, '/labyrinth.book/htmlFN/biographyFn.html');
                 break;
 
             case ThusSpokeZarathustraLinkFn:
-                fetchPage(eachLink, '/labyrinth.book/htmlFN/thusSpokeZarathustraFn.html');
+                fetchPage(eLink, '/labyrinth.book/htmlFN/thusSpokeZarathustraFn.html');
                 break;
 
             case BeyondGoodAndEvilFn:
-                fetchPage(eachLink, '/labyrinth.book/htmlFN/beyondGoodAndEvilFn.html');
+                fetchPage(eLink, '/labyrinth.book/htmlFN/beyondGoodAndEvilFn.html');
                 break;
 
             case TheAntichristFn:
-                fetchPage(eachLink, '/labyrinth.book/htmlFN/theAntichristFn.html');
+                fetchPage(eLink, '/labyrinth.book/htmlFN/theAntichristFn.html');
                 break;
         }
     })
