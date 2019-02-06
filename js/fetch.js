@@ -41,7 +41,7 @@ let TheAntichristFn = document.querySelector('#the-antichrist-fn');
 let linkArrayFn = [BiographyLinkFn, ThusSpokeZarathustraLinkFn, BeyondGoodAndEvilFn, TheAntichristFn];
 
 linkArrayFn.forEach((eLink) => {
-    eachLink.addEventListener('click', (e) => {
+    eLink.addEventListener('click', (e) => {
         switch (eLink) {
             case BiographyLinkFn:
                 fetchPage(eLink, '/labyrinth.book/htmlFN/biographyFn.html');
