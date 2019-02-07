@@ -81,6 +81,11 @@ nav {
     background-image: url('https://mdbootstrap.com/img/svg/hamburger1.svg?color=ffe400');
     }
 
+    .white-skin .navbar {
+        background: url(http://blogs.iac.gatech.edu/msternberg/files/2016/02/labyrinth2.jpg) no-repeat center center;
+        background-size: cover;
+
+    }
     .white-skin .side-nav {
        background: url(http://blogs.iac.gatech.edu/msternberg/files/2016/02/labyrinth2.jpg);
     }

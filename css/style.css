@@ -3,11 +3,12 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Futura";
-  font-weight: normal;
+  font-family: 'Indie Flower', cursive;
+  font-weight: medium;
   overflow: hidden;
   height: 100%;
   width: 100%;
+  color: #B1B1B1;
 }
 
 @media screen and (max-width:760px) {
